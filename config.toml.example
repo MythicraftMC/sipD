@@ -1,0 +1,20 @@
+# This is the default configuration file for sipD.
+# You can add custom stuff here for your hooks, too!
+# Just import the config from main into your hook, and it *should* work.
+
+[general]
+DEBUG_LOG = false
+RUN_HOOKS = true
+CHECK_INTERVAL = 5000 # in ms
+
+[cloudflare]
+CLOUDFLARE_API_KEY = ""
+RECORDS_TO_UPDATE = [
+    "1.example.domain",
+    "2.example.domain",
+    "3.backends.lol"
+]
+
+#[example_hook_config]
+#IS_THE_CODE_HORRIBLE = "probably"
+#DOES_IT_WORK_THOUGH  = "yea"
