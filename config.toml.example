@@ -3,13 +3,13 @@
 # Just import the config from main into your hook, and it *should* work.
 
 [general]
-DEBUG_LOG = false
-RUN_HOOKS = true
+DEBUG_LOG      = false
+RUN_HOOKS      = true
 CHECK_INTERVAL = 5000 # in ms
 
 [cloudflare]
 CLOUDFLARE_API_KEY = ""
-RECORDS_TO_UPDATE = [
+RECORDS_TO_UPDATE  = [
     "1.example.domain",
     "2.example.domain",
     "3.backends.lol"
