@@ -3,18 +3,16 @@
 # Just import the config from main into your hook, and it *should* work.
 
 [general]
-DEBUG_LOG      = false
-RUN_HOOKS      = true
-CHECK_INTERVAL = 5000 # in ms
+run_hooks      = true
+check_interval = 5000 # in ms
 
 [cloudflare]
-CLOUDFLARE_API_KEY = ""
-RECORDS_TO_UPDATE  = [
-    "1.example.domain",
-    "2.example.domain",
-    "3.backends.lol"
+token              = "ApKXWVES8iX0rB_vwpUih_081A4i8mdFqTbUCp4O"
+zone_id            = "b33167e8cb19473119755df87425f31b"
+records_to_update  = [ # a list of just subdomains
+    "sipd",
 ]
 
 #[example_hook_config]
-#IS_THE_CODE_HORRIBLE = "probably"
-#DOES_IT_WORK_THOUGH  = "yea"
+#is_the_code_horrible = "probably"
+#does_it_work_though  = "yea"

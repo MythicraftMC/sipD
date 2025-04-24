@@ -10,5 +10,8 @@ wheels/
 .venv
 venv
 
+# ides
+.vscode/
+
 hooks/*.py
 config.toml
